@@ -3,6 +3,7 @@ import random
 
 
 def fit_fundamental_matrix(sample_corners1, sample_corners2):
+    #return fit_fundamental_matrix_ideal(sample_corners1, sample_corners2)
     S = len(sample_corners1) # number of samples
 
     # create the matrix A to use for solving Af = 0
@@ -10,7 +11,7 @@ def fit_fundamental_matrix(sample_corners1, sample_corners2):
     for i in range(S):
         x1, y1 = sample_corners1[i]
         x2, y2 = sample_corners2[i]
-        matA.append((np.outer([x2,y2,1], [x1,y1,1])).flatten())
+        matA.append((np.outer(np.array([x2,y2,1], dtype=float), np.array([x1,y1,1], dtype=float))).flatten())
 
     # solve Af = 0 for f using SVD
     _, _, matVt = np.linalg.svd(matA)
@@ -20,6 +21,9 @@ def fit_fundamental_matrix(sample_corners1, sample_corners2):
     matU, matD, matVt = np.linalg.svd(matF)
     matD[-1] = 0
     matF = matU @ np.diag(matD) @ matVt
+
+    matF /= matF[2,2]
+
     return matF
 
 
@@ -28,13 +32,23 @@ def find_inliers(matF, corners1, corners2, matches, threshold):
     for idx1, idx2, dist in matches:
         x1, y1 = corners1[idx1]
         x2, y2 = corners2[idx2]
-        error = abs(np.array([x2,y2,1]) @ matF @ np.array([x1,y1,1]))
-        if error < threshold:
+        proj = matF @ np.array([[x1],[y1],[1]], dtype=float)
+        a = proj[0,0]
+        b = proj[1,0]
+        c = proj[2,0]
+        error = (a*x2 + b*y2 + c)**2 / (a**2+b**2)
+        proj2 = np.array([[x2,y2,1]], dtype=float) @ matF
+        a = proj2[0,0]
+        b = proj2[0,1]
+        c = proj2[0,2]
+        error = max(error, (a*x1 + b*y1 + c)**2 / (a**2+b**2))
+        
+        if error < threshold**2:
             inliers.append((idx1,idx2,dist))
     return inliers
 
 
-def ransac(corners1, corners2, matches, threshold=0.1, iterations=100):
+def ransac(corners1, corners2, matches, threshold=5, iterations=1000):
     """
     Find the Fundamental Matrix and the inliers correspoonding to it
     
