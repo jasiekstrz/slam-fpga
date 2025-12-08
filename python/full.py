@@ -2,11 +2,15 @@ import numpy as np
 import cv2
 from mpl_toolkits.mplot3d import Axes3D
 import matplotlib.pyplot as plt
+import matplotlib.image as mpimg
 from PIL import Image
 from brief import test_matching, visualize_matches, simple_motion_check
 from ransac import ransac
 from post import *
 
+
+IMG = True
+WORKLOAD = 3
 
 
 
@@ -51,9 +55,9 @@ def RANSAC_my(src_pts, dst_pts):
 
 
 
-images = [Image.open(f"../../img/KITTI_sequence_1/image_l/{i:06d}.png").convert('L') for i in range(51)]
+images = [Image.open(f"../../img/KITTI_sequence_{WORKLOAD}/image_l/{i:06d}.png").convert('L') for i in range(51)]
 
-with open('../../img/KITTI_sequence_1/calib.txt', 'r') as f:
+with open(f"../../img/KITTI_sequence_{WORKLOAD}/calib.txt", 'r') as f:
     K = np.fromstring(f.readline(), dtype=np.float64, sep=' ').reshape((3,4))[0:3,0:3]
     P1 = np.fromstring(f.readline(), dtype=np.float64, sep=' ').reshape((3,4))
 
@@ -61,6 +65,16 @@ R_cur = np.eye(3, dtype=np.float64)
 t_cur = np.zeros(3, dtype=np.float64)
 
 camera_pos = [np.zeros(3)]
+
+#sprite_pos = [[np.array([[40,0,15]]).T, np.array([[40,0,14]]).T]]
+#sprite_pos = [[np.array([[20,0,10]]).T, np.array([[20,0,12]]).T, np.array([[20,-1,11]]).T]]
+
+#sprite_pos = [[np.array([[x,y,z]]).T for x in [20,21] for y in [-1,-2] for z in [10,11]]]
+sprite_pos = [[np.array([[x,y,z]]).T for x in [16,17] for y in [-1,-2] for z in [34,35]]]
+#sprite_pos = [[np.array([[x,y,z]]).T for x in [6,7] for y in [-1,-2] for z in [34,35]]]
+edges = [(0,1,'blue'), (2,3,'blue'), (4,5,'red'), (6,7,'red'), 
+         (0,2,'blue'), (1,3,'blue'), (4,6,'red'), (5,7,'green'), 
+         (0,4,'red'), (1,5,'green'), (2,6,'red'), (3,7,'green')]
 
 for i in range(50):
     corners1, corners2, matches = ORB_ideal(images[i], images[i+1])
@@ -76,33 +90,61 @@ for i in range(50):
     points1 = points1[mask_pose.ravel().astype(bool)]
     points2 = points2[mask_pose.ravel().astype(bool)]
 
+    new_sprite = [R @ X + t for X in sprite_pos[-1]]
+    for si in range(len(new_sprite)):
+        new_sprite[si][1] = sprite_pos[-1][si][1]
+    sprite_pos.append(new_sprite)
+
     R_cur = R_cur @ R.T
     t_cur = t_cur - (R_cur @ np.ndarray.flatten(t))
 
     camera_pos.append(t_cur)
 
 
-fig = plt.figure()
-ax = fig.add_subplot(111, projection='3d')
-ax.set_xlabel('X axis')
-ax.set_ylabel('Y axis')
-ax.set_zlabel('Z axis')
-ax.view_init(elev=0, azim=90)
-plt.ion()
-plt.show()
+if IMG:
+    images = [mpimg.imread(f"../../img/KITTI_sequence_{WORKLOAD}/image_l/{i:06d}.png") for i in range(51)]
+    
+    for i in range(len(images)):
+        plt.imshow(images[i])
 
-print(np.round(camera_pos[0], 3).tolist())
-for i in range(1, len(camera_pos)):
-    p1 = camera_pos[i-1]
-    p2 = camera_pos[i]
-    print(np.round(p2, 3).tolist())
-    ax.plot(
-        [p1[0], p2[0]],
-        [p1[1], p2[1]],
-        [p1[2], p2[2]],
-        c='g'
-    )
-    plt.draw()
-    plt.pause(0.5)
+        sprite_x = []
+        sprite_y = []
+        for X in sprite_pos[i]:
+            X = K @ X
+            sprite_x.append(X[0,0]/X[2,0])
+            sprite_y.append(X[1,0]/X[2,0])
 
-plt.pause(1000)
+        plt.scatter(sprite_x, sprite_y, c='red', s=20)
+        for e0, e1, color in edges:
+            plt.plot([sprite_x[e0], sprite_x[e1]], [sprite_y[e0], sprite_y[e1]], linewidth=1, color=color)
+
+        plt.axis('off')
+        plt.show(block=False)
+        plt.pause(1)   
+        plt.clf()
+
+else:
+    fig = plt.figure()
+    ax = fig.add_subplot(111, projection='3d')
+    ax.set_xlabel('X axis')
+    ax.set_ylabel('Y axis')
+    ax.set_zlabel('Z axis')
+    ax.view_init(elev=0, azim=90)
+    plt.ion()
+    plt.show()
+
+    print(np.round(camera_pos[0], 3).tolist())
+    for i in range(1, len(camera_pos)):
+        p1 = camera_pos[i-1]
+        p2 = camera_pos[i]
+        print(np.round(p2, 3).tolist())
+        ax.plot(
+            [p1[0], p2[0]],
+            [p1[1], p2[1]],
+            [p1[2], p2[2]],
+            c='g'
+        )
+        plt.draw()
+        plt.pause(0.5)
+
+    plt.pause(1000)
