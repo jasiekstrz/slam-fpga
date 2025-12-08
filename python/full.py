@@ -9,8 +9,9 @@ from ransac import ransac
 from post import *
 
 
-IMG = True
-WORKLOAD = 3
+IMG = False
+WORKLOAD = 5
+MAX_IMG = 300
 
 
 
@@ -55,7 +56,7 @@ def RANSAC_my(src_pts, dst_pts):
 
 
 
-images = [Image.open(f"../../img/KITTI_sequence_{WORKLOAD}/image_l/{i:06d}.png").convert('L') for i in range(51)]
+images = [Image.open(f"../../img/KITTI_sequence_{WORKLOAD}/image_l/{i:06d}.png").convert('L') for i in range(MAX_IMG+1)]
 
 with open(f"../../img/KITTI_sequence_{WORKLOAD}/calib.txt", 'r') as f:
     K = np.fromstring(f.readline(), dtype=np.float64, sep=' ').reshape((3,4))[0:3,0:3]
@@ -76,7 +77,7 @@ edges = [(0,1,'blue'), (2,3,'blue'), (4,5,'red'), (6,7,'red'),
          (0,2,'blue'), (1,3,'blue'), (4,6,'red'), (5,7,'green'), 
          (0,4,'red'), (1,5,'green'), (2,6,'red'), (3,7,'green')]
 
-for i in range(50):
+for i in range(MAX_IMG):
     corners1, corners2, matches = ORB_ideal(images[i], images[i+1])
     points1 = np.float32([corners1[m.queryIdx].pt for m in matches])
     points2 = np.float32([corners2[m.trainIdx].pt for m in matches])
@@ -102,7 +103,7 @@ for i in range(50):
 
 
 if IMG:
-    images = [mpimg.imread(f"../../img/KITTI_sequence_{WORKLOAD}/image_l/{i:06d}.png") for i in range(51)]
+    images = [mpimg.imread(f"../../img/KITTI_sequence_{WORKLOAD}/image_l/{i:06d}.png") for i in range(MAX_IMG+1)]
     
     for i in range(len(images)):
         plt.imshow(images[i])
@@ -129,7 +130,7 @@ else:
     ax.set_xlabel('X axis')
     ax.set_ylabel('Y axis')
     ax.set_zlabel('Z axis')
-    ax.view_init(elev=0, azim=90)
+    ax.view_init(elev=0, azim=-90)
     plt.ion()
     plt.show()
 
@@ -145,6 +146,6 @@ else:
             c='g'
         )
         plt.draw()
-        plt.pause(0.5)
+        plt.pause(0.2)
 
     plt.pause(1000)
