@@ -1,0 +1,507 @@
+#-----------------------------------------------------------
+# Vivado v2025.1 (64-bit)
+# SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Tue Dec  9 16:32:09 2025
+# Process ID         : 1386565
+# Current directory  : /home/jstrz/slam/corner_detection.runs/design_1_feature_matcher_0_0_synth_1
+# Command line       : vivado -log design_1_feature_matcher_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_feature_matcher_0_0.tcl
+# Log file           : /home/jstrz/slam/corner_detection.runs/design_1_feature_matcher_0_0_synth_1/design_1_feature_matcher_0_0.vds
+# Journal file       : /home/jstrz/slam/corner_detection.runs/design_1_feature_matcher_0_0_synth_1/vivado.jou
+# Running On         : eecs-digital-38
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 24.04.3 LTS
+# Processor Detail   : AMD Ryzen 7 5825U with Radeon Graphics
+# CPU Frequency      : 3592.248 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 29342 MB
+# Swap memory        : 8589 MB
+# Total Virtual      : 37932 MB
+# Available Virtual  : 17096 MB
+#-----------------------------------------------------------
+source design_1_feature_matcher_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:05 . Memory (MB): peak = 1547.824 ; gain = 84.059 ; free physical = 278 ; free virtual = 14795
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/jstrz/ip_repo_slam/interface_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/jstrz/ip_repo_slam/frame_counter_interface_1_0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jstrz/vivado-library'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jstrz/slam/corner_detection.ip_user_files/bd/design_1/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jstrz/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jstrz/ip_repo_slam'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top design_1_feature_matcher_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1386895
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2178.262 ; gain = 438.828 ; free physical = 288 ; free virtual = 10672
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6901] identifier 'state' is used before its declaration [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:47]
+WARNING: [Synth 8-6901] identifier 'IDLE' is used before its declaration [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:47]
+INFO: [Synth 8-6157] synthesizing module 'design_1_feature_matcher_0_0' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ip/design_1_feature_matcher_0_0/synth/design_1_feature_matcher_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'feature_matcher' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/hdl/feature_matcher.v:4]
+INFO: [Synth 8-6157] synthesizing module 'nn' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:1]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[0][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[0][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[0][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[1][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[1][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[1][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[2][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[2][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[2][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[3][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[3][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[3][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[4][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[4][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[4][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[5][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[5][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[5][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[6][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[6][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[6][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[7][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[7][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[7][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[8][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[8][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[8][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[9][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[9][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[9][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[10][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[10][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[10][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[11][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[11][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[11][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[12][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[12][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[12][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[13][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[13][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[13][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[14][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[14][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[14][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[15][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[15][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[15][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[16][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[16][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[16][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[17][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[17][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[17][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[18][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[18][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[18][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[19][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[19][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[19][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[20][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[20][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[20][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[21][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[21][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[21][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[22][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[22][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[22][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[23][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[23][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[23][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[24][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[24][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[24][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[25][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[25][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[25][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[26][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[26][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[26][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[27][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[27][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[27][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[28][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[28][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[28][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[29][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[29][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[29][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[30][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[30][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[30][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[31][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[31][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[31][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[32][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[32][x]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[32][desc]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+WARNING: [Synth 8-7186] Applying attribute ram_style = "block" is ignored, object 'mem_bank0[33][y]' is not inferred as ram due to incorrect usage [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:40]
+INFO: [Common 17-14] Message 'Synth 8-7186' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-155] case statement is not full and has no default [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:106]
+INFO: [Synth 8-6155] done synthesizing module 'nn' (0#1) [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'feature_matcher' (0#1) [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/hdl/feature_matcher.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_feature_matcher_0_0' (0#1) [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ip/design_1_feature_matcher_0_0/synth/design_1_feature_matcher_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element tdist_reg was removed.  [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:150]
+WARNING: [Synth 8-6014] Unused sequential element second_best_corner_data_reg[y] was removed.  [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:154]
+WARNING: [Synth 8-6014] Unused sequential element second_best_corner_data_reg[x] was removed.  [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:154]
+WARNING: [Synth 8-6014] Unused sequential element second_best_corner_data_reg[desc] was removed.  [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:154]
+WARNING: [Synth 8-6014] Unused sequential element best_corner_data_reg[desc] was removed.  [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:154]
+WARNING: [Synth 8-6014] Unused sequential element match_packet_reg[y_prev] was removed.  [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:176]
+WARNING: [Synth 8-6014] Unused sequential element match_packet_reg[x_prev] was removed.  [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:176]
+WARNING: [Synth 8-6014] Unused sequential element match_packet_reg[y_curr] was removed.  [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:176]
+WARNING: [Synth 8-6014] Unused sequential element match_packet_reg[x_curr] was removed.  [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:176]
+WARNING: [Synth 8-6014] Unused sequential element match_packet_reg[dist_out] was removed.  [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:176]
+WARNING: [Synth 8-6014] Unused sequential element match_packet_reg[padding] was removed.  [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/7d1f/src/feature_matching.sv:176]
+WARNING: [Synth 8-7129] Port s00_axis_tdata[279] in module nn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tdata[278] in module nn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_aclk in module nn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_aresetn in module nn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_tready in module nn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port max_dist[15] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port max_dist[14] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port max_dist[13] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port max_dist[12] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port max_dist[11] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port max_dist[10] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port max_dist[9] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_p[15] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_p[14] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_p[13] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_p[12] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_p[11] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_p[10] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_p[9] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_q[15] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_q[14] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_q[13] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_q[12] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_q[11] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_q[10] in module feature_matcher is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_q[9] in module feature_matcher is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2288.230 ; gain = 548.797 ; free physical = 283 ; free virtual = 9990
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2297.137 ; gain = 557.703 ; free physical = 311 ; free virtual = 9971
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2297.137 ; gain = 557.703 ; free physical = 311 ; free virtual = 9971
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2297.137 ; gain = 0.000 ; free physical = 336 ; free virtual = 9947
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2389.906 ; gain = 0.000 ; free physical = 289 ; free virtual = 9658
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2389.941 ; gain = 0.000 ; free physical = 289 ; free virtual = 9658
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2389.941 ; gain = 650.508 ; free physical = 283 ; free virtual = 9547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2397.910 ; gain = 658.477 ; free physical = 283 ; free virtual = 9547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2397.910 ; gain = 658.477 ; free physical = 283 ; free virtual = 9547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2397.910 ; gain = 658.477 ; free physical = 283 ; free virtual = 9549
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	 256 Input    9 Bit       Adders := 1     
++---XORs : 
+	   2 Input    256 Bit         XORs := 1     
++---Registers : 
+	              256 Bit    Registers := 2     
+	               64 Bit    Registers := 1     
+	               11 Bit    Registers := 8     
+	                9 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---RAMs : 
+	             256K Bit	(1024 X 256 bit)          RAMs := 2     
+	              11K Bit	(1024 X 11 bit)          RAMs := 4     
++---Muxes : 
+	   2 Input  256 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   4 Input   32 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 4     
+	   4 Input   11 Bit        Muxes := 2     
+	   2 Input    9 Bit        Muxes := 3     
+	   4 Input    9 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 16    
+	   4 Input    1 Bit        Muxes := 15    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design design_1_feature_matcher_0_0 has port m00_axis_tkeep[7] driven by constant 1
+INFO: [Synth 8-3917] design design_1_feature_matcher_0_0 has port m00_axis_tkeep[6] driven by constant 1
+INFO: [Synth 8-3917] design design_1_feature_matcher_0_0 has port m00_axis_tkeep[5] driven by constant 1
+INFO: [Synth 8-3917] design design_1_feature_matcher_0_0 has port m00_axis_tkeep[4] driven by constant 1
+INFO: [Synth 8-3917] design design_1_feature_matcher_0_0 has port m00_axis_tkeep[3] driven by constant 1
+INFO: [Synth 8-3917] design design_1_feature_matcher_0_0 has port m00_axis_tkeep[2] driven by constant 1
+INFO: [Synth 8-3917] design design_1_feature_matcher_0_0 has port m00_axis_tkeep[1] driven by constant 1
+INFO: [Synth 8-3917] design design_1_feature_matcher_0_0 has port m00_axis_tkeep[0] driven by constant 1
+WARNING: [Synth 8-7129] Port s00_axis_tdata[279] in module nn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s00_axis_tdata[278] in module nn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_aclk in module nn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_aresetn in module nn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m00_axis_tready in module nn is either unconnected or has no load
+WARNING: [Synth 8-7129] Port max_dist[15] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port max_dist[14] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port max_dist[13] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port max_dist[12] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port max_dist[11] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port max_dist[10] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port max_dist[9] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_p[15] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_p[14] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_p[13] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_p[12] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_p[11] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_p[10] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_p[9] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_q[15] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_q[14] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_q[13] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_q[12] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_q[11] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_q[10] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ratio_q[9] in module design_1_feature_matcher_0_0 is either unconnected or has no load
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank0_reg[0][desc]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank0_reg[0][desc]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank0_reg[0][desc]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank0_reg[0][desc]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank1_reg[0][desc]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank1_reg[0][desc]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank1_reg[0][desc]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank1_reg[0][desc]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank0_reg[0][x]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank0_reg[0][x]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank0_reg[0][x]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank0_reg[0][x]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank1_reg[0][x]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank1_reg[0][x]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank1_reg[0][x]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank1_reg[0][x]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank0_reg[0][y]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank0_reg[0][y]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank0_reg[0][y]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank0_reg[0][y]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank1_reg[0][y]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank1_reg[0][y]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank1_reg[0][y]",trying to implement using LUTRAM
+WARNING: [Synth 8-6849] Infeasible attribute ram_style = "block" set for RAM "design_1_feature_matcher_0_0/inst/matcher/mem_bank1_reg[0][y]",trying to implement using LUTRAM
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2411.910 ; gain = 672.477 ; free physical = 652 ; free virtual = 8839
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------------------+-------------------------------------+-----------+----------------------+----------------+
+|Module Name                  | RTL Object                          | Inference | Size (Depth x Width) | Primitives     | 
++-----------------------------+-------------------------------------+-----------+----------------------+----------------+
+|design_1_feature_matcher_0_0 | inst/matcher/mem_bank0_reg[0][desc] | Implied   | 1 K x 256            | RAM64M x 1376  | 
+|design_1_feature_matcher_0_0 | inst/matcher/mem_bank1_reg[0][desc] | Implied   | 1 K x 256            | RAM64M x 1376  | 
+|design_1_feature_matcher_0_0 | inst/matcher/mem_bank0_reg[0][x]    | Implied   | 1 K x 11             | RAM64M x 64    | 
+|design_1_feature_matcher_0_0 | inst/matcher/mem_bank1_reg[0][x]    | Implied   | 1 K x 11             | RAM64M x 64    | 
+|design_1_feature_matcher_0_0 | inst/matcher/mem_bank0_reg[0][y]    | Implied   | 1 K x 11             | RAM64M x 64    | 
+|design_1_feature_matcher_0_0 | inst/matcher/mem_bank1_reg[0][y]    | Implied   | 1 K x 11             | RAM64M x 64    | 
++-----------------------------+-------------------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 2468.910 ; gain = 729.477 ; free physical = 533 ; free virtual = 8730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2476.910 ; gain = 737.477 ; free physical = 522 ; free virtual = 8728
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-----------------------------+-------------------------------------+-----------+----------------------+----------------+
+|Module Name                  | RTL Object                          | Inference | Size (Depth x Width) | Primitives     | 
++-----------------------------+-------------------------------------+-----------+----------------------+----------------+
+|design_1_feature_matcher_0_0 | inst/matcher/mem_bank0_reg[0][desc] | Implied   | 1 K x 256            | RAM64M x 1376  | 
+|design_1_feature_matcher_0_0 | inst/matcher/mem_bank1_reg[0][desc] | Implied   | 1 K x 256            | RAM64M x 1376  | 
+|design_1_feature_matcher_0_0 | inst/matcher/mem_bank0_reg[0][x]    | Implied   | 1 K x 11             | RAM64M x 64    | 
+|design_1_feature_matcher_0_0 | inst/matcher/mem_bank1_reg[0][x]    | Implied   | 1 K x 11             | RAM64M x 64    | 
+|design_1_feature_matcher_0_0 | inst/matcher/mem_bank0_reg[0][y]    | Implied   | 1 K x 11             | RAM64M x 64    | 
+|design_1_feature_matcher_0_0 | inst/matcher/mem_bank1_reg[0][y]    | Implied   | 1 K x 11             | RAM64M x 64    | 
++-----------------------------+-------------------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 2531.949 ; gain = 792.516 ; free physical = 457 ; free virtual = 8657
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2653.629 ; gain = 914.195 ; free physical = 343 ; free virtual = 8547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2653.629 ; gain = 914.195 ; free physical = 341 ; free virtual = 8545
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2653.629 ; gain = 914.195 ; free physical = 317 ; free virtual = 8521
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2653.629 ; gain = 914.195 ; free physical = 317 ; free virtual = 8521
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:32 ; elapsed = 00:00:34 . Memory (MB): peak = 2653.629 ; gain = 914.195 ; free physical = 316 ; free virtual = 8520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2653.629 ; gain = 914.195 ; free physical = 317 ; free virtual = 8521
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    31|
+|2     |LUT1   |    12|
+|3     |LUT2   |    99|
+|4     |LUT3   |   202|
+|5     |LUT4   |   123|
+|6     |LUT5   |   169|
+|7     |LUT6   |  2822|
+|8     |MUXF7  |  1112|
+|9     |RAM64M |  2976|
+|10    |FDRE   |   879|
+|11    |FDSE   |     2|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2653.629 ; gain = 914.195 ; free physical = 317 ; free virtual = 8521
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 51 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2653.629 ; gain = 821.391 ; free physical = 317 ; free virtual = 8521
+Synthesis Optimization Complete : Time (s): cpu = 00:00:33 ; elapsed = 00:00:34 . Memory (MB): peak = 2653.637 ; gain = 914.195 ; free physical = 317 ; free virtual = 8522
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.17 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2653.637 ; gain = 0.000 ; free physical = 480 ; free virtual = 8685
+INFO: [Netlist 29-17] Analyzing 4119 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_feature_matcher_0_0' is not ideal for floorplanning, since the cellview 'nn' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2709.656 ; gain = 0.000 ; free physical = 472 ; free virtual = 8685
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2976 instances were transformed.
+  RAM64M => RAM64M (RAMD64E(x4)): 2976 instances
+
+Synth Design complete | Checksum: 7bcfb80
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 193 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:43 . Memory (MB): peak = 2709.691 ; gain = 1161.867 ; free physical = 472 ; free virtual = 8685
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1685.648; main = 1611.539; forked = 188.997
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3495.824; main = 2709.660; forked = 963.871
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2733.668 ; gain = 0.000 ; free physical = 462 ; free virtual = 8678
+INFO: [Common 17-1381] The checkpoint '/home/jstrz/slam/corner_detection.runs/design_1_feature_matcher_0_0_synth_1/design_1_feature_matcher_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_feature_matcher_0_0, cache-ID = a2209d3427ce3a35
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2733.668 ; gain = 0.000 ; free physical = 386 ; free virtual = 8621
+INFO: [Common 17-1381] The checkpoint '/home/jstrz/slam/corner_detection.runs/design_1_feature_matcher_0_0_synth_1/design_1_feature_matcher_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_feature_matcher_0_0_utilization_synth.rpt -pb design_1_feature_matcher_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  9 16:33:05 2025...

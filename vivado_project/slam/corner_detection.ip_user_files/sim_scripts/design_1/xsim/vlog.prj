@@ -1,0 +1,88 @@
+verilog xil_defaultlib -i "../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef" --include "/tools/Xilinx/2025.1/Vivado/data/xilinx_vip/include" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a9be" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/434f/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_refclk/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_pixclk/hdl/verilog" \
+"../../../bd/design_1/ip/design_1_processing_system7_0_0/sim/design_1_processing_system7_0_0.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v" \
+"../../../bd/design_1/ip/design_1_tristate_0_0/sim/design_1_tristate_0_0.v" \
+"../../../bd/design_1/ip/design_1_tristate_0_1/sim/design_1_tristate_0_1.v" \
+"../../../bd/design_1/ip/design_1_rgb_to_grayscale_wra_0_0/sim/design_1_rgb_to_grayscale_wra_0_0.v" \
+
+sv xil_defaultlib -i "../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef" --include "/tools/Xilinx/2025.1/Vivado/data/xilinx_vip/include" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a9be" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/434f/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_refclk/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_pixclk/hdl/verilog" \
+"../../../bd/design_1/ipshared/9fd8/src/brief_descriptor_fast.sv" \
+"../../../bd/design_1/ipshared/9fd8/src/corner_detector.sv" \
+"../../../bd/design_1/ipshared/9fd8/src/fast_brief_integrated.sv" \
+"../../../bd/design_1/ipshared/9fd8/src/line_buffer_ram.sv" \
+"../../../bd/design_1/ipshared/9fd8/src/sync_delay.sv" \
+
+verilog xil_defaultlib -i "../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef" --include "/tools/Xilinx/2025.1/Vivado/data/xilinx_vip/include" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a9be" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/434f/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_refclk/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_pixclk/hdl/verilog" \
+"../../../bd/design_1/ipshared/9fd8/hdl/fast_brief.v" \
+"../../../bd/design_1/ip/design_1_fast_brief_0_0/sim/design_1_fast_brief_0_0.v" \
+
+sv xil_defaultlib -i "../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef" --include "/tools/Xilinx/2025.1/Vivado/data/xilinx_vip/include" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a9be" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/434f/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_refclk/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_pixclk/hdl/verilog" \
+"../../../bd/design_1/ipshared/7d1f/src/feature_matching.sv" \
+
+verilog xil_defaultlib -i "../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef" --include "/tools/Xilinx/2025.1/Vivado/data/xilinx_vip/include" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a9be" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/434f/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_refclk/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_pixclk/hdl/verilog" \
+"../../../bd/design_1/ipshared/7d1f/hdl/feature_matcher.v" \
+"../../../bd/design_1/ip/design_1_feature_matcher_0_0/sim/design_1_feature_matcher_0_0.v" \
+"../../../bd/design_1/ip/design_1_axis_data_fifo_0_0/sim/design_1_axis_data_fifo_0_0.v" \
+"../../../bd/design_1/ip/design_1_axi_mem_imp_auto_pc_0/sim/design_1_axi_mem_imp_auto_pc_0.v" \
+"../../../bd/design_1/ip/design_1_axis_data_fifo_1_0/sim/design_1_axis_data_fifo_1_0.v" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_0/sim/bd_afc3_one_0.v" \
+
+sv xil_defaultlib -i "../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef" --include "/tools/Xilinx/2025.1/Vivado/data/xilinx_vip/include" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a9be" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/434f/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_refclk/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_pixclk/hdl/verilog" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_2/sim/bd_afc3_s00mmu_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_3/sim/bd_afc3_s00tr_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_4/sim/bd_afc3_s00sic_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_5/sim/bd_afc3_s00a2s_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_6/sim/bd_afc3_sarn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_7/sim/bd_afc3_srn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_8/sim/bd_afc3_sawn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_9/sim/bd_afc3_swn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_10/sim/bd_afc3_sbn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_11/sim/bd_afc3_m00s2a_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_12/sim/bd_afc3_m00e_0.sv" \
+
+verilog xil_defaultlib -i "../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef" --include "/tools/Xilinx/2025.1/Vivado/data/xilinx_vip/include" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a9be" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/434f/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_refclk/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_pixclk/hdl/verilog" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/sim/bd_afc3.v" \
+
+sv xil_defaultlib -i "../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef" --include "/tools/Xilinx/2025.1/Vivado/data/xilinx_vip/include" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a9be" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/434f/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_refclk/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_pixclk/hdl/verilog" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/sim/design_1_axi_smc_0.sv" \
+
+verilog xil_defaultlib -i "../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef" --include "/tools/Xilinx/2025.1/Vivado/data/xilinx_vip/include" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a9be" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/434f/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_refclk/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_pixclk/hdl/verilog" \
+"../../../bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_pixclk/sim/ila_pixclk.v" \
+"../../../bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_refclk/sim/ila_refclk.v" \
+"../../../bd/design_1/ip/design_1_xpm_cdc_gen_0_0/sim/design_1_xpm_cdc_gen_0_0.v" \
+"../../../bd/design_1/ipshared/9927/hdl/interface_slave_lite_v1_0_S00_AXI.v" \
+"../../../bd/design_1/ipshared/9927/hdl/interface.v" \
+"../../../bd/design_1/ip/design_1_interface_0_0/sim/design_1_interface_0_0.v" \
+"../../../bd/design_1/ip/design_1_xpm_cdc_gen_0_1/sim/design_1_xpm_cdc_gen_0_1.v" \
+"../../../bd/design_1/ip/design_1_xpm_cdc_gen_1_0/sim/design_1_xpm_cdc_gen_1_0.v" \
+"../../../bd/design_1/ip/design_1_xpm_cdc_gen_1_1/sim/design_1_xpm_cdc_gen_1_1.v" \
+"../../../bd/design_1/ip/design_1_xpm_cdc_gen_3_0/sim/design_1_xpm_cdc_gen_3_0.v" \
+"../../../bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_0/sim/bd_68b9_one_0.v" \
+
+sv xil_defaultlib -i "../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef" --include "/tools/Xilinx/2025.1/Vivado/data/xilinx_vip/include" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a9be" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/434f/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_refclk/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_pixclk/hdl/verilog" \
+"../../../bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_2/sim/bd_68b9_s00mmu_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_3/sim/bd_68b9_s00tr_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_4/sim/bd_68b9_s00sic_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_5/sim/bd_68b9_s00a2s_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_6/sim/bd_68b9_sarn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_7/sim/bd_68b9_srn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_8/sim/bd_68b9_sawn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_9/sim/bd_68b9_swn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_10/sim/bd_68b9_sbn_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_11/sim/bd_68b9_m00s2a_0.sv" \
+"../../../bd/design_1/ip/design_1_axi_smc_1_1/bd_0/ip/ip_12/sim/bd_68b9_m00e_0.sv" \
+
+verilog xil_defaultlib -i "../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef" --include "/tools/Xilinx/2025.1/Vivado/data/xilinx_vip/include" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a9be" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/434f/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_refclk/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_pixclk/hdl/verilog" \
+"../../../bd/design_1/ip/design_1_axi_smc_1_1/bd_0/sim/bd_68b9.v" \
+
+sv xil_defaultlib -i "../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef" --include "/tools/Xilinx/2025.1/Vivado/data/xilinx_vip/include" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a9be" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/434f/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_refclk/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_pixclk/hdl/verilog" \
+"../../../bd/design_1/ip/design_1_axi_smc_1_1/sim/design_1_axi_smc_1_1.sv" \
+
+verilog xil_defaultlib -i "../../../../../../../tools/Xilinx/2025.1/data/rsb/busdef" --include "/tools/Xilinx/2025.1/Vivado/data/xilinx_vip/include" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/6cfa/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a9be" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/434f/hdl" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/f0b6/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ipshared/a8e4/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_refclk/hdl/verilog" --include "../../../../corner_detection.gen/sources_1/bd/design_1/ip/design_1_dvi2rgb_1_0/src/ila_pixclk/hdl/verilog" \
+"../../../bd/design_1/sim/design_1.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

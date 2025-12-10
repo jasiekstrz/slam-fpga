@@ -1,0 +1,334 @@
+
+*** Running vivado
+    with args -log design_1_rgb2dvi_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_rgb2dvi_1_0.tcl
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Mon Dec  8 21:38:18 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_rgb2dvi_1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jstrz/vivado-library'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jstrz/slam/corner_detection.ip_user_files/bd/design_1/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jstrz/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jstrz/ip_repo_slam'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top design_1_rgb2dvi_1_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 4084506
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2178.449 ; gain = 438.828 ; free physical = 10709 ; free virtual = 15776
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_rgb2dvi_1_0' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_1_0/synth/design_1_rgb2dvi_1_0.vhd:71]
+	Parameter kGenerateSerialClk bound to: 1 - type: bool 
+	Parameter kClkPrimitive bound to: MMCM - type: string 
+	Parameter kRstActiveHigh bound to: 1 - type: bool 
+	Parameter kClkRange bound to: 2 - type: integer 
+	Parameter kD0Swap bound to: 0 - type: bool 
+	Parameter kD1Swap bound to: 0 - type: bool 
+	Parameter kD2Swap bound to: 0 - type: bool 
+	Parameter kClkSwap bound to: 0 - type: bool 
+INFO: [Synth 8-3491] module 'rgb2dvi' declared at '/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/rgb2dvi.vhd:62' bound to instance 'U0' of component 'rgb2dvi' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_1_0/synth/design_1_rgb2dvi_1_0.vhd:127]
+INFO: [Synth 8-638] synthesizing module 'rgb2dvi' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/rgb2dvi.vhd:94]
+INFO: [Synth 8-638] synthesizing module 'ClockGen' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/ClockGen.vhd:46]
+	Parameter kPolarity bound to: 1'b1 
+INFO: [Synth 8-3491] module 'ResetBridge' declared at '/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/SyncAsyncReset.vhd:63' bound to instance 'LockLostReset' of component 'ResetBridge' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/ClockGen.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'ResetBridge' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync' (0#1) [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'ResetBridge' (0#1) [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/SyncAsyncReset.vhd:72]
+INFO: [Synth 8-3491] module 'SyncAsync' declared at '/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/SyncAsync.vhd:61' bound to instance 'PLL_LockSyncAsync' of component 'SyncAsync' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/ClockGen.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'SyncAsync__parameterized1' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/SyncAsync.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'SyncAsync__parameterized1' (0#1) [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/SyncAsync.vhd:72]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 10.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKIN1_PERIOD bound to: 12.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 2.000000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT1_DIVIDE bound to: 10 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: 0 - type: bool 
+	Parameter CLKOUT4_CASCADE bound to: 0 - type: bool 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter STARTUP_WAIT bound to: 0 - type: bool 
+INFO: [Synth 8-113] binding component instance 'DVI_ClkGenerator' to cell 'MMCME2_ADV' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/ClockGen.vhd:141]
+INFO: [Synth 8-113] binding component instance 'SerialClkBuffer' to cell 'BUFIO' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/ClockGen.vhd:205]
+	Parameter BUFR_DIVIDE bound to: 5 - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-113] binding component instance 'PixelClkBuffer' to cell 'BUFR' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/ClockGen.vhd:211]
+	Parameter BUFR_DIVIDE bound to: 1 - type: string 
+	Parameter SIM_DEVICE bound to: 7SERIES - type: string 
+INFO: [Synth 8-113] binding component instance 'Deskew' to cell 'BUFR' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/ClockGen.vhd:223]
+INFO: [Synth 8-256] done synthesizing module 'ClockGen' (0#1) [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/ClockGen.vhd:46]
+INFO: [Synth 8-638] synthesizing module 'OutputSERDES' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/OutputSERDES.vhd:76]
+	Parameter IOSTANDARD bound to: TMDS_33 - type: string 
+INFO: [Synth 8-113] binding component instance 'OutputBuffer' to cell 'OBUFDS' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/OutputSERDES.vhd:83]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter SERDES_MODE bound to: MASTER - type: string 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'SerializerMaster' to cell 'OSERDESE2' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/OutputSERDES.vhd:92]
+	Parameter DATA_RATE_OQ bound to: DDR - type: string 
+	Parameter DATA_RATE_TQ bound to: SDR - type: string 
+	Parameter DATA_WIDTH bound to: 10 - type: integer 
+	Parameter SERDES_MODE bound to: SLAVE - type: string 
+	Parameter TBYTE_CTL bound to: FALSE - type: string 
+	Parameter TBYTE_SRC bound to: FALSE - type: string 
+	Parameter TRISTATE_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-113] binding component instance 'SerializerSlave' to cell 'OSERDESE2' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/OutputSERDES.vhd:135]
+INFO: [Synth 8-256] done synthesizing module 'OutputSERDES' (0#1) [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/OutputSERDES.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'TMDS_Encoder' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/TMDS_Encoder.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'TMDS_Encoder' (0#1) [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/TMDS_Encoder.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'rgb2dvi' (0#1) [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/d57c/src/rgb2dvi.vhd:94]
+INFO: [Synth 8-256] done synthesizing module 'design_1_rgb2dvi_1_0' (0#1) [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_1_0/synth/design_1_rgb2dvi_1_0.vhd:71]
+WARNING: [Synth 8-7129] Port SerialClk in module TMDS_Encoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aRst in module TMDS_Encoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aRst_n in module rgb2dvi is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2258.387 ; gain = 518.766 ; free physical = 10615 ; free virtual = 15683
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2276.199 ; gain = 536.578 ; free physical = 10615 ; free virtual = 15683
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2276.199 ; gain = 536.578 ; free physical = 10615 ; free virtual = 15683
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2282.137 ; gain = 0.000 ; free physical = 10615 ; free virtual = 15683
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_1_0/src/rgb2dvi_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_1_0/src/rgb2dvi_ooc.xdc] for cell 'U0'
+Parsing XDC File [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_1_0/src/rgb2dvi.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_1_0/src/rgb2dvi.xdc] for cell 'U0'
+Parsing XDC File [/home/jstrz/slam/corner_detection.runs/design_1_rgb2dvi_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/jstrz/slam/corner_detection.runs/design_1_rgb2dvi_1_0_synth_1/dont_touch.xdc]
+Parsing XDC File [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_1_0/src/rgb2dvi_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ip/design_1_rgb2dvi_1_0/src/rgb2dvi_clocks.xdc] for cell 'U0'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2406.969 ; gain = 0.000 ; free physical = 10617 ; free virtual = 15685
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Timing 38-2] Deriving generated clocks
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2407.004 ; gain = 0.000 ; free physical = 10617 ; free virtual = 15685
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2407.004 ; gain = 667.383 ; free physical = 10638 ; free virtual = 15706
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2414.973 ; gain = 675.352 ; free physical = 10638 ; free virtual = 15706
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2414.973 ; gain = 675.352 ; free physical = 10638 ; free virtual = 15706
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2414.973 ; gain = 675.352 ; free physical = 10638 ; free virtual = 15707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input    5 Bit       Adders := 9     
+	   4 Input    5 Bit       Adders := 3     
+	   2 Input    5 Bit       Adders := 3     
+	   8 Input    4 Bit       Adders := 6     
+	   2 Input    4 Bit       Adders := 3     
++---XORs : 
+	   2 Input      1 Bit         XORs := 42    
++---Registers : 
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 3     
+	                8 Bit    Registers := 3     
+	                5 Bit    Registers := 3     
+	                4 Bit    Registers := 9     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 20    
++---Muxes : 
+	   4 Input   10 Bit        Muxes := 3     
+	   2 Input    9 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port aRst_n in module rgb2dvi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SerialClk in module rgb2dvi is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2414.973 ; gain = 675.352 ; free physical = 10641 ; free virtual = 15710
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2443.973 ; gain = 704.352 ; free physical = 10598 ; free virtual = 15667
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2470.004 ; gain = 730.383 ; free physical = 10598 ; free virtual = 15667
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2470.004 ; gain = 730.383 ; free physical = 10598 ; free virtual = 15667
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2631.816 ; gain = 892.195 ; free physical = 10454 ; free virtual = 15523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2631.816 ; gain = 892.195 ; free physical = 10454 ; free virtual = 15523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2631.816 ; gain = 892.195 ; free physical = 10454 ; free virtual = 15523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2631.816 ; gain = 892.195 ; free physical = 10454 ; free virtual = 15523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2631.816 ; gain = 892.195 ; free physical = 10454 ; free virtual = 15523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2631.816 ; gain = 892.195 ; free physical = 10454 ; free virtual = 15523
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFIO      |     1|
+|2     |BUFR       |     2|
+|4     |LUT1       |     5|
+|5     |LUT2       |    23|
+|6     |LUT3       |    35|
+|7     |LUT4       |    23|
+|8     |LUT5       |    43|
+|9     |LUT6       |    72|
+|10    |MMCME2_ADV |     1|
+|11    |OSERDESE2  |     8|
+|13    |FDCE       |     4|
+|14    |FDPE       |     5|
+|15    |FDRE       |   119|
+|16    |FDSE       |    15|
+|17    |OBUFDS     |     4|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 2631.816 ; gain = 892.195 ; free physical = 10454 ; free virtual = 15523
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 3 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2631.816 ; gain = 761.391 ; free physical = 10454 ; free virtual = 15523
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2631.824 ; gain = 892.195 ; free physical = 10454 ; free virtual = 15523
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2631.824 ; gain = 0.000 ; free physical = 10454 ; free virtual = 15523
+INFO: [Netlist 29-17] Analyzing 7 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2687.844 ; gain = 0.000 ; free physical = 10618 ; free virtual = 15686
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: c719ae57
+INFO: [Common 17-83] Releasing license: Synthesis
+50 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:21 . Memory (MB): peak = 2687.879 ; gain = 1139.930 ; free physical = 10617 ; free virtual = 15686
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1801.592; main = 1801.592; forked = 268.580
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3378.836; main = 2687.848; forked = 963.859
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2711.855 ; gain = 0.000 ; free physical = 10617 ; free virtual = 15686
+INFO: [Common 17-1381] The checkpoint '/home/jstrz/slam/corner_detection.runs/design_1_rgb2dvi_1_0_synth_1/design_1_rgb2dvi_1_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_rgb2dvi_1_0, cache-ID = 977b6f449843c5e7
+INFO: [Coretcl 2-1174] Renamed 14 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2711.855 ; gain = 0.000 ; free physical = 10621 ; free virtual = 15690
+INFO: [Common 17-1381] The checkpoint '/home/jstrz/slam/corner_detection.runs/design_1_rgb2dvi_1_0_synth_1/design_1_rgb2dvi_1_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_rgb2dvi_1_0_utilization_synth.rpt -pb design_1_rgb2dvi_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  8 21:38:43 2025...

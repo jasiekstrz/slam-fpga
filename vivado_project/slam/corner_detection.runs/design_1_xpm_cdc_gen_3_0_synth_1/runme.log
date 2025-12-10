@@ -1,0 +1,24 @@
+
+*** Running vivado
+    with args -log design_1_xpm_cdc_gen_3_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xpm_cdc_gen_3_0.tcl
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Tue Dec  9 16:33:07 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_xpm_cdc_gen_3_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/jstrz/ip_repo_slam/interface_1_0'. The path is contained within another repository.
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/jstrz/ip_repo_slam/frame_counter_interface_1_0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jstrz/vivado-library'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jstrz/slam/corner_detection.ip_user_files/bd/design_1/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jstrz/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jstrz/ip_repo_slam'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/2025.1/Vivado/data/ip'.
+INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP design_1_xpm_cdc_gen_3_0, cache-ID = 4100a6930137d76f.
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  9 16:33:13 2025...

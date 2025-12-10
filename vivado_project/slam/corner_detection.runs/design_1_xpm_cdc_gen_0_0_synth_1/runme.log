@@ -1,0 +1,287 @@
+
+*** Running vivado
+    with args -log design_1_xpm_cdc_gen_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xpm_cdc_gen_0_0.tcl
+
+
+****** Vivado v2025.1 (64-bit)
+  **** SW Build 6140274 on Wed May 21 22:58:25 MDT 2025
+  **** IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+  **** SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+  **** Start of session at: Tue Dec  9 10:49:35 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_xpm_cdc_gen_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-3685] Ignored loading user repository '/home/jstrz/ip_repo_slam/frame_counter_interface_1_0'. The path is contained within another repository.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jstrz/vivado-library'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jstrz/slam/corner_detection.ip_user_files/bd/design_1/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jstrz/ip_repo'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/jstrz/ip_repo_slam'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/2025.1/Vivado/data/ip'.
+Command: synth_design -top design_1_xpm_cdc_gen_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 195145
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2178.176 ; gain = 438.742 ; free physical = 2992 ; free virtual = 10059
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_xpm_cdc_gen_0_0' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ip/design_1_xpm_cdc_gen_0_0/synth/design_1_xpm_cdc_gen_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gen_v1_0_5' [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/5f71/hdl/xpm_cdc_gen_v1_0_vl_rfs.v:51]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_array_single' [/tools/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_array_single' (0#1) [/tools/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:903]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gen_v1_0_5' (0#1) [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/5f71/hdl/xpm_cdc_gen_v1_0_vl_rfs.v:51]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xpm_cdc_gen_0_0' (0#1) [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ip/design_1_xpm_cdc_gen_0_0/synth/design_1_xpm_cdc_gen_0_0.v:53]
+WARNING: [Synth 8-3848] Net dest_out_bin in module/entity xpm_cdc_gen_v1_0_5 does not have driver. [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/5f71/hdl/xpm_cdc_gen_v1_0_vl_rfs.v:84]
+WARNING: [Synth 8-3848] Net src_rcv in module/entity xpm_cdc_gen_v1_0_5 does not have driver. [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/5f71/hdl/xpm_cdc_gen_v1_0_vl_rfs.v:85]
+WARNING: [Synth 8-3848] Net dest_req in module/entity xpm_cdc_gen_v1_0_5 does not have driver. [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/5f71/hdl/xpm_cdc_gen_v1_0_vl_rfs.v:86]
+WARNING: [Synth 8-3848] Net dest_pulse in module/entity xpm_cdc_gen_v1_0_5 does not have driver. [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/5f71/hdl/xpm_cdc_gen_v1_0_vl_rfs.v:87]
+WARNING: [Synth 8-3848] Net dest_rst_out in module/entity xpm_cdc_gen_v1_0_5 does not have driver. [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/5f71/hdl/xpm_cdc_gen_v1_0_vl_rfs.v:88]
+WARNING: [Synth 8-3848] Net dest_arst in module/entity xpm_cdc_gen_v1_0_5 does not have driver. [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ipshared/5f71/hdl/xpm_cdc_gen_v1_0_vl_rfs.v:89]
+WARNING: [Synth 8-7129] Port dest_out_bin[7] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_out_bin[6] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_out_bin[5] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_out_bin[4] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_out_bin[3] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_out_bin[2] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_out_bin[1] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_out_bin[0] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_rcv in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_req in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_pulse in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_rst_out in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_arst in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_in_bin[7] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_in_bin[6] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_in_bin[5] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_in_bin[4] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_in_bin[3] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_in_bin[2] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_in_bin[1] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_in_bin[0] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_send in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_pulse in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_rst in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_rst_in in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_arst in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2256.145 ; gain = 516.711 ; free physical = 2258 ; free virtual = 9328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2273.957 ; gain = 534.523 ; free physical = 2355 ; free virtual = 9423
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2273.957 ; gain = 534.523 ; free physical = 2355 ; free virtual = 9423
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2273.957 ; gain = 0.000 ; free physical = 2355 ; free virtual = 9423
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ip/design_1_xpm_cdc_gen_0_0/synth/design_1_xpm_cdc_gen_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ip/design_1_xpm_cdc_gen_0_0/synth/design_1_xpm_cdc_gen_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ip/design_1_xpm_cdc_gen_0_0/design_1_xpm_cdc_gen_0_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/jstrz/slam/corner_detection.gen/sources_1/bd/design_1/ip/design_1_xpm_cdc_gen_0_0/design_1_xpm_cdc_gen_0_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/jstrz/slam/corner_detection.runs/design_1_xpm_cdc_gen_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/jstrz/slam/corner_detection.runs/design_1_xpm_cdc_gen_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tools/Xilinx/2025.1/Vivado/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_array_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_xpm_cdc_gen_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_xpm_cdc_gen_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 1 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2390.695 ; gain = 0.000 ; free physical = 2090 ; free virtual = 9159
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2390.730 ; gain = 0.000 ; free physical = 2098 ; free virtual = 9167
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2390.730 ; gain = 651.297 ; free physical = 2170 ; free virtual = 9243
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2398.699 ; gain = 659.266 ; free physical = 2170 ; free virtual = 9243
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2398.699 ; gain = 659.266 ; free physical = 2176 ; free virtual = 9248
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2398.699 ; gain = 659.266 ; free physical = 2195 ; free virtual = 9269
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port dest_out_bin[7] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_out_bin[6] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_out_bin[5] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_out_bin[4] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_out_bin[3] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_out_bin[2] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_out_bin[1] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_out_bin[0] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_rcv in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_req in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_pulse in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_rst_out in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_arst in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_in_bin[7] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_in_bin[6] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_in_bin[5] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_in_bin[4] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_in_bin[3] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_in_bin[2] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_in_bin[1] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_in_bin[0] in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_send in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_pulse in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_rst in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_rst_in in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port src_arst in module xpm_cdc_gen_v1_0_5 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2398.699 ; gain = 659.266 ; free physical = 2226 ; free virtual = 9300
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2420.699 ; gain = 681.266 ; free physical = 2089 ; free virtual = 9164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2420.699 ; gain = 681.266 ; free physical = 2089 ; free virtual = 9164
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2430.715 ; gain = 691.281 ; free physical = 2069 ; free virtual = 9144
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2605.527 ; gain = 866.094 ; free physical = 1483 ; free virtual = 8560
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2605.527 ; gain = 866.094 ; free physical = 1483 ; free virtual = 8560
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2605.527 ; gain = 866.094 ; free physical = 1483 ; free virtual = 8560
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2605.527 ; gain = 866.094 ; free physical = 1483 ; free virtual = 8560
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2605.527 ; gain = 866.094 ; free physical = 1483 ; free virtual = 8560
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2605.527 ; gain = 866.094 ; free physical = 1483 ; free virtual = 8560
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |FDRE |    40|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2605.527 ; gain = 866.094 ; free physical = 1483 ; free virtual = 8560
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2605.527 ; gain = 749.320 ; free physical = 1483 ; free virtual = 8561
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 2605.535 ; gain = 866.094 ; free physical = 1483 ; free virtual = 8561
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2605.535 ; gain = 0.000 ; free physical = 1482 ; free virtual = 8559
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2605.535 ; gain = 0.000 ; free physical = 1736 ; free virtual = 8814
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 2f356e68
+INFO: [Common 17-83] Releasing license: Synthesis
+27 Infos, 62 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 2605.562 ; gain = 1062.004 ; free physical = 1737 ; free virtual = 8815
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1572.621; main = 1572.621; forked = 196.127
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3354.559; main = 2605.531; forked = 963.859
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2629.539 ; gain = 0.000 ; free physical = 1737 ; free virtual = 8815
+INFO: [Common 17-1381] The checkpoint '/home/jstrz/slam/corner_detection.runs/design_1_xpm_cdc_gen_0_0_synth_1/design_1_xpm_cdc_gen_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_xpm_cdc_gen_0_0, cache-ID = 735838b988434dd5
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2629.539 ; gain = 0.000 ; free physical = 1707 ; free virtual = 8785
+INFO: [Common 17-1381] The checkpoint '/home/jstrz/slam/corner_detection.runs/design_1_xpm_cdc_gen_0_0_synth_1/design_1_xpm_cdc_gen_0_0.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_xpm_cdc_gen_0_0_utilization_synth.rpt -pb design_1_xpm_cdc_gen_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  9 10:50:05 2025...
